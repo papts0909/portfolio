@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đạt Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512- enacting a content security policy (csp) is highly recommended to mitigate risks from code injection attacks. please refer to csp documentation for further details. https csp report uri https //csp report uri" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <style>
+        body {
+            font-family: 'Courier New', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, monospace;
+            background: #050505;
+            /* background: rgb(23, 25, 28); */
+            color: #f8f8f2;
+            margin: 0;
+            padding: 0;
+            /* font-size: 0.8em; */
+        }
+        
+        header {
+            background-color: #050505;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid rgb(255 45 96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0.5rem 1rem;
+        }
+        
+        nav ul li a {
+            color: #f8f8f2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: rgb(255 45 96);
+        }
+        
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: #050505;
+            border-radius: 10px;
+            border: 1px solid #44475a;
+        }
+        
+        .underline {
+            border-bottom: 2px solid rgb(255 45 96);
+            padding-bottom: 0.5rem;
+        }
+        
+        ul {
+            list-style: square;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #050505;
+            border-top: 2px solid rgb(255 45 96);
+        }
+        
+        .job {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            color: rgb(255 45 96);
+            font-weight: bold;
+        }
+
+        #contact p a, #contact p a:visited {
+            color: #03A9F4;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .icon-carousel {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .icon-item {
+            display: inline-block;
+            margin: 0 10px; /* Adjust spacing between icons */
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section {
+                padding: 1rem;
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#introduction"><i class="fas fa-home"></i> Introduction</a></li>
+              <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+              <li><a href="#skills"><i class="fas fa-code"></i> Skills and Technologies</a></li>
+              <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+              <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+              <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+              <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Information</a></li>
+            </ul>
+          </nav>          
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h1 class="underline"><i class="fas fa-home"></i> Introduction</h1>
+            <img src="https://media.licdn.com/dms/image/D5603AQH18_dkOEgWAw/profile-displayphoto-shrink_200_200/0/1722435167801?e=1727913600&v=beta&t=ZD-zpBNdNIlmEGrPVVrhoF5XEXUm-Yv-nqKCwAMvQ28" alt="Paris" width="120" height="120">
+            <h1>Ngo Nguyen Dat (Marc)</h1>
+            <h4>Senior Software Engineer | +8 Experience Web-based application</h4>
+            <p>30 yrs old</p>
+            <p>Ho Chi Minh City, Vietnam</p>
+
+        </section>
+
+        <section id="about">
+            <h2 class="underline"><i class="fas fa-user"></i> About Me</h2>
+            <p>In my +8 years of software engineering, I’ve immersed myself in code, creativity, and collaboration. Elegant solutions are my passion—they withstand time’s relentless march.
+
+                <br/><br/>But it doesn’t end there. Learning new techniques is my hobby; challenges sharpen my skills. Yet, I’m eager to contribute—to share experiences with colleagues. Together, we’ll weave a stronger, better company tapestry.
+                
+                <br/><br/>Remember, growth isn’t solo—it’s a symphony of collaboration. 🚀😊✨</p>
+        </section>
+
+        <section id="skills">
+            <h2 class="underline"><i class="fas fa-code"></i> Skills and Technologies</h2>
+            <ul>
+                <li class="highlight">Programming Languages: PHP, JavaScript (+8 years experiences)</li><br/>
+                <li>Frameworks and Libraries: React, Laravel, Zend</li><br/>
+                <li>Tools and Platforms: Git, Docker, Kubernetes, Linux server (CentOS, Debian, Alpine), Nginx, Apache, PHP-fpm, Git & GitLab</li><br/>
+                <li>+4 years experiences with Microservices</li><br/>
+                <li>Business Analyst, System Architecture, Deployment</li>
+                <li>Team Lead</li>
+            </ul>
+            <!-- <div class="icon-carousel">
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 1" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+                <div class="icon-item"><img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="Brand 2" width="190" height="80" style="object-fit: scale-down;"></div>
+            </div> -->
+              
+        </section>
+
+        <section id="experience">
+            <h2 class="underline"><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="job">
+                <h3 class="underline">Junior, Mid-level, Senior Sofware Engineer & Team Lead.</h3>
+                <ul>
+                    <li>Develop and maintain Web-based application using PHP (Zend, Laravel), JavaScript (ES5, ES6).</li><br/>
+                    <li>Develop UI with jQuery, React and Micro Frontend with Webpack, Vite.</li><br/>
+                    <li>Design OLTP/OLAP database with MySQL.</li><br/>
+                    <li>Design, develop, test, maintain, and deploy mobile apps using React Native, back-end RESTful API using PHP (Zend, Laravel), NodeJS.</li><br/>
+                    <li>Optimize performance and infrastructure of our Ecosystem: Code base, Database Query, Cache (Redis, Memcached), Message Queue (RabbitMQ).</li><br/>
+                    <li>Research, design, and develop highly reliable, available, and scalable web-scale distributed Microservices-based systems, gRPC, Temporal, Docker, Kubernetes.</li><br/>
+                    <li>Code repository and management with internal Git & GitLab.</li><br/>
+                    <li>Troubleshot and resolved issues with the IT team on Linux server (CentOS, Debian, Alpine), Nginx, Apache, PHP-fpm.</li><br/>
+                    <li>Collaborated with third parties & cross-functional teams to design and implement new features with APIs, Webhooks.</li><br/>
+                    <li>Managed project development tasks including Business Analyst, System Architecture, Deployment.</li><br/>
+                    <li>Communicate directly with stakeholders & business owners to understand requirements and consult for technical perspective.</li><br/>
+                    <li>Collaborate effectively with product managers toward building the right features; Estimate and manage deliveries of features in a predictable manner; Supported system testing and UAT phases.</li><br/>
+                    <li>Create clean and maintainable code; Collaborate on architecture discussions with the team.</li><br/>
+                    <li>Contributed to design reviews, write code/system documentation.</li><br/>
+                    <li>Provide training for junior and middle software engineers.</li><br/>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="underline"><i class="fas fa-project-diagram"></i> Projects</h2>
+            <ul>
+                <li><b>Transportation Management System (TMS) & Fleet Management Software:</b> Developed a web-based application with Microservices architecture PHP (Zend, Laravel), JavaScript, jQuery, Bootstrap 3, MySQL used by over 1000 users across 10+ companies including logistics & distribution company.</li><br/>
+                <li><b>TMS Driver & Customer Mobile App:</b> Mobile app using React Native & back end RESTful power by PHP & Node.js. The driver app allows drivers to manage their commands, report journeys, and handle costs incurred on trips. The customer app allows customers to manage their orders, delivery process, promotions, reviews and rating.</li><br/>
+                <li><b>Ticket Sales Management:</b> High-availability with Microservices architecture (Temporal, Laravel, Node.js, UI with React) Ticket Sales Management for a sleeper buses company. The system allows users to manage schedules, routes & ticket sales, booking tickets online.</li><br/>
+                <li><b>Service report geolocation:</b> Service using Node.js, MySQL with a published RESTful for mobile apps or hardware devices that have GPS capabilities. The service can handle 500+ concurrent requests. </li><br/>
+                <li><b>Service message queues:</b> Enhanced the application’s services performance by RabbitMQ</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2 class="underline"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li>Bachelor of software engineering. Ly Tu Trong College of HCMC. Graduation: July 2015.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="underline"><i class="fas fa-envelope"></i> Contact Information</h2>
+            <p>LinkedIn: <a href="https://linkedin.com/in/marc-ngo-dat" target="_blank">Ngô (Marc) Đạt</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ngô (Marc) Đạt. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav ul li a');
+            links.forEach((link) => {
+                link.addEventListener('click', () => {
+                    links.forEach(l => l.style.color = '#f8f8f2');
+                    link.style.color = 'rgb(255 45 96)';
+                });
+            });
+
+            const iconCarousel = document.querySelector('.icon-carousel');
+            const iconItems = document.querySelectorAll('.icon-item');
+            let scrollPosition = 0;
+
+            function slide() {
+            scrollPosition += 10; // Adjust the scroll amount as needed
+            iconCarousel.scrollLeft = scrollPosition;
+
+            if (scrollPosition >= iconCarousel.scrollWidth - iconCarousel.clientWidth) {
+                scrollPosition = 0;
+            }
+            }
+
+            setInterval(slide, 100); // Adjust the slide interval as needed
+
+        });
+    </script>
+</body>
+</html>
