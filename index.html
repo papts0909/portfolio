@@ -138,7 +138,7 @@
             <img src="https://lh3.googleusercontent.com/a/ACg8ocIP34h3n9jBCL5XPmKc_Hz6zvEILhlO4B83X8_9-24Urj1ZMHCZUQ=s83-c-mo" alt="Marc's avatar" width="120" height="120">
             <h1>Ngo Nguyen Dat (Marc)</h1>
             <h4>Senior (PHP) Software Engineer | ___exp_yrs___ Experience Web-based application</h4>
-            <p>30 yrs old</p>
+            <p>___old_yrs___ yrs old</p>
             <p>Ho Chi Minh City, Vietnam</p>
 
         </section>
@@ -260,18 +260,26 @@
 
             setInterval(slide, 100); // Adjust the slide interval as needed
 
-            function replaceExperienceYears() {
-              const startDate = new Date(2016, 0);
-              const now = new Date();
-              let years = now.getFullYear() - startDate.getFullYear();
-              if (now.getMonth() < startDate.getMonth()) years--;
-              document.querySelectorAll("*").forEach(el => {
-                if (el.innerHTML.includes("___exp_yrs___")) {
-                  el.innerHTML = el.innerHTML.replace(/___exp_yrs___/g, `+${years}`);
+            function replaceYears(selector, placeholder, fromDate) {
+                  const now = new Date();
+                  let years = now.getFullYear() - fromDate.getFullYear();
+                  if (
+                    now.getMonth() < fromDate.getMonth() ||
+                    (now.getMonth() === fromDate.getMonth() && now.getDate() < fromDate.getDate())
+                  ) {
+                    years--;
+                  }
+                  document.querySelectorAll(selector).forEach(el => {
+                    if (el.innerHTML.includes(placeholder)) {
+                      el.innerHTML = el.innerHTML.replace(new RegExp(placeholder, 'g'), `+${years}`);
+                    }
+                  });
                 }
-              });
-            }
-            replaceExperienceYears();
+            
+                replaceYears("*", "___exp_yrs___", new Date(2016, 0));
+                replaceYears("*", "___old_yrs___", new Date(1994, 8, 9));
+                
+                document.getElementById("currentYear").textContent = new Date().getFullYear();
 
         });
     </script>
