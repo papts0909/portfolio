@@ -260,7 +260,7 @@
 
             setInterval(slide, 100); // Adjust the slide interval as needed
 
-            function replaceYears(selector, placeholder, fromDate) {
+            function replaceYears(selector, placeholder, fromDate, prefix) {
                   const now = new Date();
                   let years = now.getFullYear() - fromDate.getFullYear();
                   if (
@@ -271,13 +271,13 @@
                   }
                   document.querySelectorAll(selector).forEach(el => {
                     if (el.innerHTML.includes(placeholder)) {
-                      el.innerHTML = el.innerHTML.replace(new RegExp(placeholder, 'g'), `+${years}`);
+                      el.innerHTML = el.innerHTML.replace(new RegExp(placeholder, 'g'), `${prefix}${years}`);
                     }
                   });
                 }
             
-                replaceYears("*", "___exp_yrs___", new Date(2016, 0));
-                replaceYears("*", "___old_yrs___", new Date(1994, 8, 9));
+                replaceYears("*", "___exp_yrs___", new Date(2016, 0), '+');
+                replaceYears("*", "___old_yrs___", new Date(1994, 8, 9), '');
                 
                 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
